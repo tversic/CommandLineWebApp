@@ -4,30 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1a3beda-2ec8-40ac-8e53-f9fad62dcadb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/AppGlobal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/CalculatePrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/ChangeRoomData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/CheckIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/CheckOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/ListAllRoomsInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/ListCheckedInRooms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/Model/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/Repos/RepoImpl/RoomRepoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/Repos/RepoInterfaces/RoomRepo.java" afterDir="false" />
+    <list default="true" id="e1a3beda-2ec8-40ac-8e53-f9fad62dcadb" name="Changes" comment="Added few functionalities">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/ListAllFreeRooms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotelApp/ChangeRoomData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/ChangeRoomData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotelApp/CheckIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/CheckIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotelApp/CheckOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/CheckOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotelApp/ListAllRoomsInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/ListAllRoomsInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotelApp/Repos/RepoImpl/RoomRepoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/Repos/RepoImpl/RoomRepoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hotelApp/Repos/RepoInterfaces/RoomRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hotelApp/Repos/RepoInterfaces/RoomRepo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +65,7 @@
   &quot;keyToString&quot;: {
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/untitled&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -105,6 +91,7 @@
     <configuration name="ChangeRoomData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.hotelApp.ChangeRoomData" />
       <module name="CheckInDemoVanilla.main" />
+      <option name="PROGRAM_PARAMETERS" value="id 37 name 333" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.hotelApp.*" />
@@ -180,8 +167,21 @@
       <workItem from="1715700256647" duration="1818000" />
       <workItem from="1718278140430" duration="627000" />
       <workItem from="1718369921890" duration="5000" />
-      <workItem from="1720780218976" duration="11178000" />
+      <workItem from="1720780218976" duration="11547000" />
+      <workItem from="1720878045123" duration="517000" />
+      <workItem from="1720878590841" duration="288000" />
+      <workItem from="1721463085171" duration="7528000" />
+      <workItem from="1722429469544" duration="252000" />
+      <workItem from="1722431435228" duration="3566000" />
     </task>
+    <task id="LOCAL-00001" summary="Added few functionalities">
+      <created>1720792080483</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720792080483</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +198,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added few functionalities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added few functionalities" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -213,13 +217,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/hotelApp/CheckOut.java</url>
-          <line>50</line>
+          <line>49</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/hotelApp/ChangeRoomData.java</url>
-          <line>117</line>
+          <line>75</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/hotelApp/ChangeRoomData.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

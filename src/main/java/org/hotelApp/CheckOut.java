@@ -26,7 +26,7 @@ public class CheckOut {
 
     private static boolean checkRoomNoFormat(String[] args) {
         try {
-            int roomNo = Integer.parseInt(args[0]);
+            Integer.parseInt(args[0]);
         } catch (NumberFormatException e) {
             System.out.println("Entered room number/argument is not number, please try again");
             return true;
@@ -35,7 +35,6 @@ public class CheckOut {
     }
 
     private static boolean checkOut(String[] roomNo) {
-
         databaseConnection = AppGlobal.returnDatabaseConnection();
         RoomRepo repo = new RoomRepoImpl(databaseConnection);
         Room checkOutRoom = repo.findByRoomName(roomNo[0]);

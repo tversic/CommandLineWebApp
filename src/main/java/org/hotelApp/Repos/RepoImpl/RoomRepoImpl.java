@@ -85,6 +85,32 @@ public class RoomRepoImpl implements RoomRepo {
     public List<Room> findCheckedInRooms() {
         List<Room> checkedInRooms = new ArrayList<>();
 
+        String sql = "SELECT id, room_name, is_checked_out, price, checkin_date FROM Room WHERE is_checked_out = true";
+
+        try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                Room room = new Room();
+                room.setId(resultSet.getInt("id"));
+                room.setRoomName(resultSet.getString("room_name"));
+                room.setCheckedOut(resultSet.getBoolean("is_checked_out"));
+                room.setPrice(resultSet.getBigDecimal("price"));
+                room.setCheckinDate(resultSet.getDate("checkin_date"));
+
+                checkedInRooms.add(room);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return checkedInRooms;
+    }
+
+    @Override
+    public List<Room> findFreeInRooms() {
+        List<Room> checkedInRooms = new ArrayList<>();
+
         String sql = "SELECT id, room_name, is_checked_out, price, checkin_date FROM Room WHERE is_checked_out = false";
 
         try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {

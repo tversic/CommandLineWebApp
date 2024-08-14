@@ -31,11 +31,14 @@ public class CheckIn {
         }
         if (checkRoomNoFormat(args)) return;
 
-        if (checkinRoom != null)
-            if (doCheckInAction(repo, checkinRoom)) return;
-        saveNewRoom(args, repo);
+        if (checkinRoom != null) {
+            if (doCheckInAction(repo, checkinRoom))
+                return;
+        } else
+            saveNewRoom(args, repo);
 
-         // Statistics
+
+        // Statistics
         int noOfRooms = returnNoOfRooms();
         System.out.println("NUMBER OF ROOMS IN DATABASE " + noOfRooms + " " + Arrays.toString(args));
 

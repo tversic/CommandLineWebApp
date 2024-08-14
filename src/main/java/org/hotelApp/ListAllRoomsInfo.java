@@ -34,7 +34,7 @@ public class ListAllRoomsInfo {
             for (Room room : rooms) {
                 System.out.println("Room ID: " + room.getId());
                 System.out.println("Room Name: " + room.getRoomName());
-                System.out.println("Checked Out: " + room.getCheckedOut());
+                System.out.println("Checked In: " + room.getCheckedOut());
                 System.out.println("Price: " + room.getPrice());
                 System.out.println("Check-in Date: " + room.getCheckinDate());
                 System.out.println();

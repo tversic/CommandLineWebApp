@@ -10,5 +10,6 @@ public interface RoomRepo {
     Room findById(long id);
     Room findByRoomName(String roomName);
     List<Room> findCheckedInRooms();
+    public List<Room> findFreeInRooms();
     List<Room> findAll();
 }
